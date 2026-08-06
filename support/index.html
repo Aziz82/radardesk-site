@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RadarDesk — Support</title>
+<meta name="description" content="RadarDesk support: contact, common questions, and how to report a problem with the data.">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index,follow">
+<style>
+:root{
+  --terminal-slate:#0A0F1D;
+  --surface-steel:#162032;
+  --surface-deep:#111A29;
+  --hairline:#1F2C42;
+  --radar-cyan:#00F2FE;
+  --liquidity-green:#10B981;
+  --alert-amber:#F59E0B;
+  --slate-400:#94A3B8;
+  --slate-100:#E8EDF5;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Rounded","SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--terminal-slate);
+  color:var(--slate-100);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.5rem 5rem}
+
+/* ---- masthead ---- */
+header.masthead{
+  border-bottom:1px solid var(--hairline);
+  padding-bottom:1.75rem;
+  margin-bottom:2.5rem;
+}
+.wordmark{
+  font-family:var(--mono);
+  font-size:.8rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--radar-cyan);
+  margin:0 0 .9rem;
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+}
+.pip{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--radar-cyan);
+  box-shadow:0 0 0 3px rgba(0,242,254,.16);
+  flex:none;
+}
+h1{
+  font-size:2rem;
+  line-height:1.2;
+  letter-spacing:-.02em;
+  margin:0 0 .75rem;
+  font-weight:700;
+}
+.effective{
+  font-family:var(--mono);
+  font-size:.75rem;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--slate-400);
+  margin:0;
+}
+
+/* ---- type ---- */
+h2{
+  font-size:1.28rem;
+  line-height:1.3;
+  letter-spacing:-.01em;
+  margin:3rem 0 .9rem;
+  padding-top:1.75rem;
+  border-top:1px solid var(--hairline);
+  font-weight:650;
+}
+h2:first-of-type{border-top:0;padding-top:0}
+h3{font-size:1.02rem;margin:2rem 0 .55rem;font-weight:650}
+p{margin:0 0 1.05rem}
+a{color:var(--radar-cyan);text-decoration:none;border-bottom:1px solid rgba(0,242,254,.35)}
+a:hover,a:focus-visible{border-bottom-color:var(--radar-cyan)}
+a:focus-visible{outline:2px solid var(--radar-cyan);outline-offset:3px;border-radius:2px}
+strong{color:#fff;font-weight:650}
+ul{margin:0 0 1.05rem;padding-left:1.15rem}
+li{margin-bottom:.55rem}
+li::marker{color:var(--slate-400)}
+code{font-family:var(--mono);font-size:.87em;color:var(--radar-cyan);background:rgba(0,242,254,.07);padding:.08em .38em;border-radius:4px}
+
+/* ---- cards ---- */
+.card{
+  background:linear-gradient(180deg,var(--surface-steel),var(--surface-deep));
+  border:1px solid var(--hairline);
+  border-radius:14px;
+  padding:1.35rem 1.4rem .35rem;
+  margin:0 0 1.75rem;
+}
+.card > :last-child{margin-bottom:1rem}
+.card.accent{border-left:3px solid var(--radar-cyan)}
+.card.amber{border-left:3px solid var(--alert-amber)}
+.card.green{border-left:3px solid var(--liquidity-green)}
+.label{
+  font-family:var(--mono);
+  font-size:.68rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--slate-400);
+  margin:0 0 .6rem;
+  display:block;
+}
+.headline{
+  font-size:1.5rem;
+  line-height:1.25;
+  font-weight:700;
+  letter-spacing:-.02em;
+  margin:0 0 .7rem;
+  color:#fff;
+}
+.headline em{font-style:normal;color:var(--liquidity-green)}
+
+/* ---- source table ---- */
+table{width:100%;border-collapse:collapse;margin:0 0 1.5rem;font-size:.94rem}
+th,td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--hairline);vertical-align:top}
+th{
+  font-family:var(--mono);
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--slate-400);
+  font-weight:500;
+  border-bottom-color:var(--radar-cyan);
+}
+td:first-child{white-space:nowrap;font-weight:600}
+@media (max-width:34rem){
+  table,thead,tbody,tr,th,td{display:block}
+  thead{display:none}
+  tr{border-bottom:1px solid var(--hairline);padding:.5rem 0}
+  td{border-bottom:0;padding:.15rem 0}
+  td:first-child{color:var(--radar-cyan);font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+}
+
+/* ---- footer ---- */
+footer{
+  margin-top:3.5rem;
+  padding-top:1.75rem;
+  border-top:1px solid var(--hairline);
+  color:var(--slate-400);
+  font-size:.88rem;
+}
+footer p{margin-bottom:.6rem}
+.muted{color:var(--slate-400)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <p class="wordmark"><span class="pip"></span>RadarDesk</p>
+  <h1>Support</h1>
+</header>
+
+<main>
+
+<div class="card accent">
+  <span class="label">Contact</span>
+  <p class="headline"><a href="mailto:aldubaib@gmail.com">aldubaib@gmail.com</a></p>
+  <p>Support is by email. Messages are normally answered within a few days. Include your iOS
+  version, the app version from <strong>Settings &#9656; About</strong>, and the ticker you were
+  looking at &mdash; those three things resolve most reports without a second exchange.</p>
+</div>
+
+<h2>What RadarDesk does</h2>
+
+<p>RadarDesk reads three public sources &mdash; SEC Form 4 insider filings, FINRA daily short
+volume, and FINRA off-exchange (ATS) weekly volume &mdash; and combines them into a single score per
+ticker, with the direction and the confidence stated separately from the number.</p>
+
+<h2>Common questions</h2>
+
+<h3>A panel says &ldquo;absent&rdquo; rather than showing a number.</h3>
+
+<p>That is deliberate and it is not a fault. When a data source has published nothing for a symbol,
+RadarDesk shows the panel as absent instead of filling it with zero, because zero is a claim about
+the market and absence is not. The composite score is computed from the panels that are present and
+the completeness figure on screen tells you how much of the picture you are seeing.</p>
+
+<h3>Off-exchange volume looks weeks old.</h3>
+
+<p>It is. FINRA publishes ATS and non-ATS off-exchange volume on a two-to-four-week delay. That lag
+is a property of the data, not of the app, and RadarDesk labels it everywhere it appears rather than
+presenting stale figures as current.</p>
+
+<h3>The banner says data is degraded or stale.</h3>
+
+<p>One of the upstream publishers is late or unreachable. The app keeps showing the last data it
+has, with its age, rather than blanking the screen. It clears itself when the source returns.</p>
+
+<h3>Notifications are not arriving.</h3>
+
+<p>Check that notifications are allowed for RadarDesk in iOS Settings, that quiet hours in
+<strong>Settings &#9656; Alerts</strong> are not covering the current time, and that the alert rule
+is enabled. Alerts are always visible on the Alerts screen even when delivery is off, so if a rule
+fired you will see it there.</p>
+
+<h3>I reinstalled and my watchlist is gone.</h3>
+
+<p>Expected. RadarDesk has no account by design, so there is nothing that survives a reinstall to
+restore from. That is the direct cost of not identifying you; it is described in the
+<a href="../privacy/">privacy policy</a>.</p>
+
+<h2>Reporting a problem with the data</h2>
+
+<p>If a figure looks wrong, email the ticker, the panel, what the app showed and what you expected,
+with the date. Filings get restated and amended and RadarDesk can be wrong too &mdash; a specific
+report is worth far more than a general one.</p>
+
+<h2>Not investment advice</h2>
+
+<div class="card green">
+  <span class="label">Disclaimer</span>
+  <p><strong>RadarDesk presents public regulatory filings and market data for information only. It
+  is not investment advice and makes no recommendation.</strong></p>
+</div>
+
+<h2>Privacy</h2>
+
+<p>The full policy is at <a href="../privacy/">radardesk privacy policy</a>. In short: no account,
+no analytics, no tracking, no ads; the free tier sends nothing to RadarDesk at all.</p>
+
+</main>
+
+<footer>
+  <p>RadarDesk is built and operated by Abu Saud, an independent developer.</p>
+  <p class="muted">Not affiliated with the SEC, FINRA, or any exchange or issuer. Information only,
+  not investment advice.</p>
+  <p class="muted">&copy; 2026 Abu Saud</p>
+</footer>
+
+</div>
+</body>
+</html>
